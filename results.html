@@ -11,9 +11,9 @@
           <th  style="width: 300px;"><br>
           </th>
           <th>setuptools 3.3–18.4 with parser</th>
-          <th>setuptools 3.3–18.4 without parser </th>
+          <th>setuptools 3.3–18.4 without parser<sup>2</sup> </th>
           <th>setuptools 18.5–20.1.1 with parser</th>
-          <th>setuptools 19.1–20.1.1 without parser<sup>2</sup> </th>
+          <th>setuptools 19.1–20.1.1 without parser<sup>2,3</sup> </th>
           <th>packaging 16.1–16.5 (&amp; setuptools 20.2–20.6.5)</th>
           <th>packaging 16.6 (&amp; setuptools 20.6.6–20.9.0)</th>
           <th>packaging 16.7 (&amp; setuptools 20.10.0–22.0.5 &amp; pip 8.1.2) </th>
@@ -278,9 +278,9 @@
           <td><br>
           </td>
           <td>✓ </td>
-          <td>✓<sup>3</sup> </td>
-          <td>✓<sup>3</sup> </td>
-          <td>✓<sup>3</sup> </td>
+          <td>✓<sup>4</sup> </td>
+          <td>✓<sup>4</sup> </td>
+          <td>✓<sup>4</sup> </td>
           <td><br>
           </td>
         </tr>
@@ -290,6 +290,8 @@
       <li>These do not appear in <a  href="https://www.python.org/dev/peps/pep-0508/">PEP
           508</a> as of writing. These are legacy markers supported by <a  href="https://pypi.python.org/pypi/packaging">packaging</a>
         for compatibility with old software.</li>
+      <li>The "without parser" variants are essentially just used on Jython and
+        IronPython.</li>
       <li>setuptools versions 18.5 through 19.0 do not work without parser.</li>
       <li>The extra marker is meant to be defined by what uses the markers;
         setuptools' APIs fails to parse it, though packaging can parse it but
